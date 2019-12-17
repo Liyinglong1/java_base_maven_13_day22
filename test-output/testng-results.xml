@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4220" started-at="2019-12-13T01:29:25Z" finished-at="2019-12-13T01:29:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4220" started-at="2019-12-13T01:29:25Z" finished-at="2019-12-13T01:29:30Z">
+      <class name="com.lemonban.base.testCase.All_Test_Case">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="beforeSuite" is-config="true" duration-ms="18" started-at="2019-12-13T09:29:25Z" finished-at="2019-12-13T09:29:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="1541" started-at="2019-12-13T09:29:26Z" data-provider="getData" finished-at="2019-12-13T09:29:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_1, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=reg_sql_1, caseId=reg_case_1, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":0}], actual=, checkResult=]], afterCheckerList=[SqlChecker [sqlId=reg_sql_2, caseId=reg_case_1, type=af, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=], SqlChecker [sqlId=reg_sql_3, caseId=reg_case_1, type=af, sql=select leave_amount,type*1 as type,reg_name from member where mobile_phone = '13888886666';, expected=[{"leave_amount":0.00,"type":1,"reg_name":"Ð¡ÄûÃÊ"}], actual=, checkResult=]], getRowNo()=2]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="445" started-at="2019-12-13T09:29:27Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_2, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÕËºÅÒÑ´æÔÚ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=reg_sql_4, caseId=reg_case_2, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=]], afterCheckerList=null, getRowNo()=3]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="80" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_3, apiId=api_reg, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=4]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="83" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_4, apiId=api_reg, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
+{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=5]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="78" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_5, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"ÃÜÂëÎª¿Õ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=6]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="74" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_6, apiId=api_reg, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
+{"jsonPath":"$.msg","expected":"ÊÖ»úºÅÎª¿Õ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=7]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="79" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=reg_case_7, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=8]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="388" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_1, apiId=api_login, requestData={"mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":0},
+{"jsonPath":"$.msg","expected":"OK"},
+{"jsonPath":"$.data.type","expected":1}], extractRespData=[{"jsonPath":"$.data.id","paramName":"member_id"},{"jsonPath":"$.data.token_info.token","paramName":"token"}], apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=login_sql_1, caseId=login_case_1, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=]], afterCheckerList=null, getRowNo()=9]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="89" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_2, apiId=api_login, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=10]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="86" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_3, apiId=api_login, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=11]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="75" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_4, apiId=api_login, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=12]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="80" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_5, apiId=api_login, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=13]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="82" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_6, apiId=api_login, requestData={"mobile_phone": "13888886666","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=14]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="81" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=login_case_7, apiId=api_login, requestData={"mobile_phone": "13888886666"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=15]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="82" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=recharge_case_1, apiId=api_recharge, requestData={"member_id": 74334,"amount": 0}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
+{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=16]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="88" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=recharge_case_2, apiId=api_recharge, requestData={"member_id": 74334,"amount": 6780}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
+{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=17]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="79" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=recharge_case_3, apiId=api_recharge, requestData={"member_id": 74334,"amount": 500001}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
+{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=18]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="84" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ApiCaseDetail [caseId=recharge_case_4, apiId=api_recharge, requestData={"member_id": 74334,"amount": -100}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
+{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=19]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_case -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="afterSuite" is-config="true" duration-ms="226" started-at="2019-12-13T09:29:30Z" finished-at="2019-12-13T09:29:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.lemonban.base.testCase.All_Test_Case -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
