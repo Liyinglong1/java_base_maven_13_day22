@@ -15,13 +15,14 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.tika.exception.ZeroByteFileException;
 
 import com.lemonban.base.utils.ExcelUtils;
 
 public class ReadExcel {
 	
 	 public static void main(String[] args) throws Exception {
-		 ArrayList<List> list3 = readExcel("/case17/test_case_01.xlsx",0); 
+		 ArrayList<List> list3 = readExcel("E:\\风控授信列表 (20).xls",0); 
 		 for (int i = 0; i <list3.size(); i++) {
 			 System.out.println(list3.get(i)); 
 			 } 

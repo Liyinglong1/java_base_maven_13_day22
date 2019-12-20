@@ -11,7 +11,7 @@ public class CompareExcelMain {
 //		
 		CompareExcel compareExcel = new CompareExcel();
 //		compareExcel.compareExcel(firstExcelPath, secondExcelPath);
-		compareExcel.compareExcel("E:\\ideaCode\\java_base_maven_13_day22\\src\\test\\resources\\case17\\001.xlsx", "E:\\ideaCode\\java_base_maven_13_day22\\src\\test\\resources\\case17\\002.xlsx");
+		compareExcel.compareExcel("E:\\风控授信列表 (21).xls", "E:\\风控授信列表 (20).xls");
 //		"/case17/002.xlsx"
 	}
 

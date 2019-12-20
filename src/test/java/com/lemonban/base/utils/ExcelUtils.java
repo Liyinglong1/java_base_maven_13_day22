@@ -66,7 +66,8 @@ public class ExcelUtils {
 			for (int i = 1; i <= lastRowNum; i++) {
 				// 创建一个用户对象来保存数据行的信息
 				Object object = clazz.newInstance();
-
+				
+				
 				// -------------------- 通过反射设值行号-----------------------
 				// 当前行的行号
 				int rowNo = i + 1;
@@ -266,3 +267,7 @@ public class ExcelUtils {
 	}
 
 }
+
+
+
+

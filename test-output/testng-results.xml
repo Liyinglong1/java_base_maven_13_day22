@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4220" started-at="2019-12-13T01:29:25Z" finished-at="2019-12-13T01:29:30Z">
+  <suite name="Default suite" duration-ms="4515" started-at="2019-12-18T10:01:34Z" finished-at="2019-12-18T10:01:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4220" started-at="2019-12-13T01:29:25Z" finished-at="2019-12-13T01:29:30Z">
+    <test name="Default test" duration-ms="4515" started-at="2019-12-18T10:01:34Z" finished-at="2019-12-18T10:01:39Z">
       <class name="com.lemonban.base.testCase.All_Test_Case">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="beforeSuite" is-config="true" duration-ms="18" started-at="2019-12-13T09:29:25Z" finished-at="2019-12-13T09:29:25Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="beforeSuite" is-config="true" duration-ms="134784" started-at="2019-12-18T17:59:20Z" finished-at="2019-12-18T18:01:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="1541" started-at="2019-12-13T09:29:26Z" data-provider="getData" finished-at="2019-12-13T09:29:27Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="1599" started-at="2019-12-18T18:01:35Z" data-provider="getData" finished-at="2019-12-18T18:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="445" started-at="2019-12-13T09:29:27Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="474" started-at="2019-12-18T18:01:37Z" data-provider="getData" finished-at="2019-12-18T18:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="80" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="80" started-at="2019-12-18T18:01:37Z" data-provider="getData" finished-at="2019-12-18T18:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="83" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="80" started-at="2019-12-18T18:01:37Z" data-provider="getData" finished-at="2019-12-18T18:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="78" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="80" started-at="2019-12-18T18:01:37Z" data-provider="getData" finished-at="2019-12-18T18:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="74" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="90" started-at="2019-12-18T18:01:37Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="79" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:28Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="82" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="388" started-at="2019-12-13T09:29:28Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="380" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="89" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="88" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="86" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="79" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -128,7 +128,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="75" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="71" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -139,7 +139,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="80" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="90" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="82" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="97" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:38Z">
           <params>
             <param index="0">
               <value>
@@ -161,7 +161,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="81" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="85" started-at="2019-12-18T18:01:38Z" data-provider="getData" finished-at="2019-12-18T18:01:39Z">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="82" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="76" started-at="2019-12-18T18:01:39Z" data-provider="getData" finished-at="2019-12-18T18:01:39Z">
           <params>
             <param index="0">
               <value>
@@ -184,7 +184,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="88" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="76" started-at="2019-12-18T18:01:39Z" data-provider="getData" finished-at="2019-12-18T18:01:39Z">
           <params>
             <param index="0">
               <value>
@@ -196,7 +196,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="79" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:29Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="75" started-at="2019-12-18T18:01:39Z" data-provider="getData" finished-at="2019-12-18T18:01:39Z">
           <params>
             <param index="0">
               <value>
@@ -208,7 +208,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="test_case" duration-ms="84" started-at="2019-12-13T09:29:29Z" data-provider="getData" finished-at="2019-12-13T09:29:30Z">
+        <test-method status="PASS" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="test_case" duration-ms="74" started-at="2019-12-18T18:01:39Z" data-provider="getData" finished-at="2019-12-18T18:01:39Z">
           <params>
             <param index="0">
               <value>
@@ -220,7 +220,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@7bc1a03d]" name="afterSuite" is-config="true" duration-ms="226" started-at="2019-12-13T09:29:30Z" finished-at="2019-12-13T09:29:30Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@121314f7]" name="afterSuite" is-config="true" duration-ms="369" started-at="2019-12-18T18:01:39Z" finished-at="2019-12-18T18:01:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

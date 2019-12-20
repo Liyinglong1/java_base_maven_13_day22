@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CompareExcel {
+	public String aString = "nihao";
 	public static void compareExcel(String firstExcelPath,String secondExcelPath) throws Exception {
 		ReadExcel readExcel = new ReadExcel();
 		ArrayList<List> list1 = readExcel.readExcel(firstExcelPath, 0);
