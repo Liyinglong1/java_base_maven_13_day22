@@ -16,8 +16,6 @@ import com.lemonban.base.pojo.SqlChecker;
 
 /**
  * 接口工具类
- * 
- * @author happy
  *
  */
 public class ApiUtils {

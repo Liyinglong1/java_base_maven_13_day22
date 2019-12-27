@@ -21,7 +21,7 @@ import com.lemonban.base.utils.ParamUtils;
 import com.lemonban.base.utils.SqlCheckUtils;
 
 /**
- * @author happy 第三方测试报告框架的集成：extentreport、reportng、allure
+ * 			第三方测试报告框架的集成：extentreport、reportng、allure
  *         https://docs.qameta.io/allure/
  */
 public class All_Test_Case {

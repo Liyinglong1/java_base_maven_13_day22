@@ -12,8 +12,6 @@ import com.lemonban.base.pojo.ExpectedRespKeyInfo;
 
 /**
  * 断言的工具类
- * 
- * @author happy
  *
  */
 public class AssertUtils {
@@ -40,13 +38,10 @@ public class AssertUtils {
 		Object document = Configuration.defaultConfiguration().jsonProvider().parse(actualResult);
 		// 遍历每个要断言的信息
 		for (ExpectedRespKeyInfo expectedRespKeyInfo : respKeyInfoList) {
-			// 提取数据的期望值
 			String jsonPath = expectedRespKeyInfo.getJsonPath();
-			// 提取数据的期望值
 			Object expected = expectedRespKeyInfo.getExpected();
 			// 通过jsonpath技术提取对应的实际结果
 			Object actualData = JsonPath.read(document, jsonPath);
-			// 断言
 			Assert.assertEquals(actualData, expected);
 		}
 	}

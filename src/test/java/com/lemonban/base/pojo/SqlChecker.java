@@ -3,8 +3,6 @@ package com.lemonban.base.pojo;
 /**
  * 数据验证表单中行数据对应的类
  * 
- * @author happy
- *
  */
 public class SqlChecker extends ExcelObject {
 

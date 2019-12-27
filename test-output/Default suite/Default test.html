@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 18 18:01:34 CST 2019</td>
+<td>Started on:</td><td>Fri Dec 27 11:40:03 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4515 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1076 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,82 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_1, apiId=api_login, requestData={"userName":"liyinglong","password","111111"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.data.code","expected":"200"},{"jsonPath":"$.data.message","expected":"µÇÂ¼³É¹¦"}], extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=[SqlChecker [sqlId=login_sql_1, caseId=login_case_1, type=bf, sql=SELECT COUNT(user_name) FROM employee WHERE user_name = 'liyinglong' AND `password`='96e79218965eb72c92a549dd5a330112', expected=[{"COUNT(user_name)":1}], actual=, checkResult=]], afterCheckerList=[SqlChecker [sqlId=login_sql_2, caseId=login_case_1, type=af, sql=SELECT COUNT(user_name) FROM employee WHERE user_name = 'liyinglong' AND `password`='96e79218965eb72c92a549dd5a330112', expected=[{"COUNT(user_name)":1}], actual=, checkResult=]], getRowNo()=2]</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [4003]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.lemonban.base.utils.AssertUtils.assertRespKeyInfo(AssertUtils.java:45)
+	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace94919826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace94919826'><pre>java.lang.AssertionError: expected [200] but found [4003]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at com.lemonban.base.utils.AssertUtils.assertRespKeyInfo(AssertUtils.java:45)
+	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,106 +151,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_1, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=reg_sql_1, caseId=reg_case_1, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":0}], actual=, checkResult=]], afterCheckerList=[SqlChecker [sqlId=reg_sql_2, caseId=reg_case_1, type=af, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=], SqlChecker [sqlId=reg_sql_3, caseId=reg_case_1, type=af, sql=select leave_amount,type*1 as type,reg_name from member where mobile_phone = '13888886666';, expected=[{"leave_amount":0.00,"type":1,"reg_name":"Ð¡ÄûÃÊ"}], actual=, checkResult=]], getRowNo()=2]</td>
-<td></td>
-<td>1</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_2, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
-{"jsonPath":"$.msg","expected":"ÕËºÅÒÑ´æÔÚ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=reg_sql_4, caseId=reg_case_2, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=]], afterCheckerList=null, getRowNo()=3]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_2, apiId=api_login, requestData={"userName":"","password",""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=3]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_3, apiId=api_reg, requestData={ "mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
-{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=4]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_3, apiId=api_login, requestData={"userName":"","password","111111"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=4]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_4, apiId=api_reg, requestData={ "mobile_phone": "lemon","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":2},
-{"jsonPath":"$.msg","expected":"ÎÞÐ§µÄÊÖ»ú¸ñÊ½"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=5]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_4, apiId=api_login, requestData={"userName":"liyinglong","password",""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=5]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_5, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
-{"jsonPath":"$.msg","expected":"ÃÜÂëÎª¿Õ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=6]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_5, apiId=api_login, requestData={"userName":"liyinglong1","password","111113"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=6]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_6, apiId=api_reg, requestData={ "mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":1},
-{"jsonPath":"$.msg","expected":"ÊÖ»úºÅÎª¿Õ"}], extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=7]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_6, apiId=api_login, requestData={"userName":"liyinglong","password","111114"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=7]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 <tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=reg_case_7, apiId=api_reg, requestData={ "mobile_phone": "13888886666","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_reg, apiName=×¢²á, url=http://120.78.128.25:8766/futureloan/member/register, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=8]</td>
+<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_7, apiId=api_login, requestData={"userName":"liyinglong1","password","111111"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://mgt.myhwdztest.com/api/login, type=POST, headers=[{"name":"Host","value":"mgt.myhwdztest.com"},{"name":"Connection","value":"keep-alive"},{"name":"Cache-Control","value":"no-cache"},{"name":"Origin","value":"http://mgt.myhwdztest.com"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Referer","value":"http://mgt.myhwdztest.com/"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":"application/x-www-form-urlencoded; charset=UTF-8"},{"name":"Accept","value":" */*"},{"name":"Cookie","value":"_relogin_id_token=73|00024511-1BEF-4FBF-8B0B-D31DC6F8FF54|liyinglong; JSESSIONID=55B6499526184D210DFAF2747F3FAEE4; isMarket="}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=8]</td>
 <td></td>
 <td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_1, apiId=api_login, requestData={"mobile_phone": "13888886666","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":0},
-{"jsonPath":"$.msg","expected":"OK"},
-{"jsonPath":"$.data.type","expected":1}], extractRespData=[{"jsonPath":"$.data.id","paramName":"member_id"},{"jsonPath":"$.data.token_info.token","paramName":"token"}], apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=[SqlChecker [sqlId=login_sql_1, caseId=login_case_1, type=bf, sql=select count(1) from member where mobile_phone = '13888886666';, expected=[{"count(1)":1}], actual=, checkResult=]], afterCheckerList=null, getRowNo()=9]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_2, apiId=api_login, requestData={"mobile_phone": "13888","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=10]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_3, apiId=api_login, requestData={"mobile_phone": "","pwd": "12345678"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=11]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_4, apiId=api_login, requestData={"mobile_phone": "","pwd": ""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=12]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_5, apiId=api_login, requestData={"mobile_phone": "lemon","pwd": ""}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=13]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_6, apiId=api_login, requestData={"mobile_phone": "13888886666","pwd": "12345"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=14]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_7, apiId=api_login, requestData={"mobile_phone": "13888886666"}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=µÇÂ¼, url=http://120.78.128.25:8766/futureloan/member/login, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=15]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=recharge_case_1, apiId=api_recharge, requestData={"member_id": 74334,"amount": 0}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
-{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=16]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=recharge_case_2, apiId=api_recharge, requestData={"member_id": 74334,"amount": 6780}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
-{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=17]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=recharge_case_3, apiId=api_recharge, requestData={"member_id": 74334,"amount": 500001}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
-{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=18]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
-<tr>
-<td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=recharge_case_4, apiId=api_recharge, requestData={"member_id": 74334,"amount": -100}, actualResp=, expectedRespKeyInfo=, extractRespData=, apiInfo=ApiInfo [apiId=api_recharge, apiName=³äÖµ, url=http://120.78.128.25:8766/futureloan/member/recharge, type=POST, headers=[{"name":"X-Lemonban-Media-Type","value":"lemonban.v3"},
-{"name":"Authorization","value":"Bearer ${token}"}], auth=], beforeCheckerList=null, afterCheckerList=null, getRowNo()=19]</td>
-<td></td>
-<td>0</td>
-<td>com.lemonban.base.testCase.All_Test_Case@121314f7</td></tr>
+<td>com.lemonban.base.testCase.All_Test_Case@7bc1a03d</td></tr>
 </table><p>
 </body>
 </html>

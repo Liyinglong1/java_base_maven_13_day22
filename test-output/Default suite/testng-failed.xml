@@ -5,7 +5,7 @@
     <classes>
       <class name="com.lemonban.base.testCase.All_Test_Case">
         <methods>
-          <include name="test_case" invocation-numbers="7"/>
+          <include name="test_case" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
         </methods>

@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * 接口测试用例的详细信息
- * 
- * @author happy
  *
  */
 public class ApiCaseDetail extends ExcelObject {

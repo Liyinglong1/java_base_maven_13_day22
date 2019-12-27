@@ -15,8 +15,6 @@ import java.util.Properties;
 
 /**
  * 数据库的操作
- * 
- * @author happy
  *
  */
 public class DbUtils {

@@ -26,6 +26,7 @@ import org.apache.poi.hssf.dev.ReSave;
 import com.alibaba.fastjson.JSONObject;
 import com.lemon.EncryptUtils;
 import com.lemonban.base.pojo.ApiCaseDetail;
+import com.lemonban.base.pojo.ApiInfo;
 import com.lemonban.base.pojo.LemonHeader;
 
 public class HttpUtils {
@@ -293,33 +294,7 @@ public class HttpUtils {
 	}
 
 	public static void main(String[] args) {
-		// String result = EncryptUtils.rsaEncrypt("123456");
-		// 请求体
-		String reqStr = "{\"member_id\": 1,\"amount\": 0}";
-		// String reqStr2 = "{'member_id': 1,'amount':
-		// 0,'timestamp':1569035331,'sign':'xxxxx'}";
-		// 获取到的token--》请求头
-		String token = "eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjExLCJleHAiOjE1NjkwMzI4Mzl9.MbDsm9F0vnbIfsDKWn5ihWc1VbLwrpbFpsfLgKcGErYdQ3GShr2JN6K99kdmiCGenwfHXoE3Au8DJ_j4QYYKrg";
-		// 获取到的时间戳
-		Long timestamp = System.currentTimeMillis() / 1000;
-		// token的钱50位+timestamp
-		String tempStr = token.substring(0, 50) + timestamp;
-		// RSA非对称加密得到签名sign
-		String sign = EncryptUtils.rsaEncrypt(tempStr);
-		// 将请求体转成map
-		Map<String, Object> map = (Map<String, Object>) JSONObject.parse(reqStr);
-		// sign+timestamp-->请求体
-		map.put("timestamp", timestamp);
-		map.put("sign", sign);
-
-		String finalReqStr = JSONObject.toJSONString(map);
-
-		System.out.println(timestamp);
-		System.out.println(token);
-		System.out.println(tempStr);
-		System.out.println(sign);
-		// System.out.println(map.toString());
-		System.out.println(finalReqStr);
+		new ApiInfo();
 	}
 
 }

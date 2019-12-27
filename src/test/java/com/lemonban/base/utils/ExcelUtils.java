@@ -174,9 +174,8 @@ public class ExcelUtils {
 		OutputStream outputStream = null;
 		try {
 			inputStream = ExcelUtils.class.getResourceAsStream(sourceExcelPath);
-			;
+			
 			workbook = WorkbookFactory.create(inputStream);
-			// 在第1个表单的第一行的第一列写入：Java13期的同学们大家好
 			Sheet sheet = workbook.getSheetAt(sheetIndex);
 			// 获取全局数据池
 			List<CellData> cellDataList = ApiUtils.getCellDataList();

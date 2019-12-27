@@ -3,14 +3,12 @@ package com.lemonban.base.pojo;
 /**
  * 描述请求头用的
  * 
- * @author happy
  *
  */
 public class LemonHeader {
 
 	private String name;
 	private String value;
-
 	public String getName() {
 		return name;
 	}

@@ -2,8 +2,6 @@ package com.lemonban.base.pojo;
 
 /**
  * 描述任意表单任意一行的抽象类
- * 
- * @author happy
  *
  */
 public class ExcelObject {

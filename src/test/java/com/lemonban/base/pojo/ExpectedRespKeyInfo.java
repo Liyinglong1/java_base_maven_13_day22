@@ -3,9 +3,7 @@ package com.lemonban.base.pojo;
 /**
  * "[{""jsonPath"":""$.code"",""expected"":2},
  * {""jsonPath"":""$.msg"",""expected"":""账号已存在""}]"
- * 
- * @author happy
- *
+
  */
 public class ExpectedRespKeyInfo {
 	/**

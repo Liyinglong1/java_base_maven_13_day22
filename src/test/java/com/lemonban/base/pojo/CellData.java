@@ -2,8 +2,6 @@ package com.lemonban.base.pojo;
 
 /**
  * 描述的是要写回某个单元格的相关的一些数据
- * 
- * @author happy
  *
  */
 public class CellData {

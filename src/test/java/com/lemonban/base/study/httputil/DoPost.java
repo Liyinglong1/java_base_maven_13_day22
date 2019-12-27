@@ -27,10 +27,10 @@ import com.lemonban.base.study.compareExcel.List;
 public class DoPost {
 
 	public static void main(String[] args) throws Exception {
-		postRequest();
+		System.out.println(postRequest());
 	}
 
-	public static void postRequest() throws UnsupportedEncodingException, IOException, ClientProtocolException {
+	public static String postRequest() throws UnsupportedEncodingException, IOException, ClientProtocolException {
 		ArrayList<BasicNameValuePair> list = new ArrayList<BasicNameValuePair>();
 //		userName=liyinglong&password=111111&_spam=1576825876508
 		HashMap<String,String> map = new HashMap<String,String>();
@@ -54,6 +54,8 @@ public class DoPost {
 	
 		CloseableHttpResponse response = HttpClient.execute(post);
 		String responseEnity = EntityUtils.toString(response.getEntity(), "UTF-8");
+		
+		return responseEnity;
 	}
 
 }

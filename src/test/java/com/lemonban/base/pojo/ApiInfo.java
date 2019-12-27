@@ -4,8 +4,6 @@ import java.util.List;
 
 /**
  * api的基本信息
- * 
- * @author happy
  *
  */
 public class ApiInfo extends ExcelObject {
