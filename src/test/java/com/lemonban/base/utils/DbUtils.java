@@ -172,7 +172,7 @@ public class DbUtils {
 		// excute("delete from member where id=6;");
 		// excuteQuery("select id,reg_name,mobile_phone,pwd from member;");
 
-		List<LinkedHashMap<String, Object>> allResultSet = excuteQuery("select * from member");
+		List<LinkedHashMap<String, Object>> allResultSet = excuteQuery("select * from cs_customer");
 		for (LinkedHashMap<String, Object> hashMap : allResultSet) {
 			System.out.println(hashMap);
 		}
