@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="all-test(failed)">
+    <classes>
+      <class name="com.lemonban.base.testCase.All_Test_Case">
+        <methods>
+          <include name="test_case" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- com.lemonban.base.testCase.All_Test_Case -->
+    </classes>
+  </test> <!-- all-test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

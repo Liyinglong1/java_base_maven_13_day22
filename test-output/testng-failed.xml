@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" parallel="none">
-  <test name="Default test(failed)" parallel="none">
+<suite name="Failed suite [Suite]">
+  <test name="all-test(failed)">
     <classes>
       <class name="com.lemonban.base.testCase.All_Test_Case">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.lemonban.base.testCase.All_Test_Case -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- all-test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

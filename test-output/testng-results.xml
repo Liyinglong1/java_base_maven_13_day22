@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2447" started-at="2020-05-27T12:58:33Z" finished-at="2020-05-27T12:58:36Z">
+  <suite name="Suite" duration-ms="3371" started-at="2020-05-28T08:17:48Z" finished-at="2020-05-28T08:17:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2447" started-at="2020-05-27T12:58:33Z" finished-at="2020-05-27T12:58:36Z">
+    <test name="all-test" duration-ms="3371" started-at="2020-05-28T08:17:48Z" finished-at="2020-05-28T08:17:52Z">
       <class name="com.lemonban.base.testCase.All_Test_Case">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@6f0628de]" name="beforeSuite" is-config="true" duration-ms="49" started-at="2020-05-27T20:58:33Z" finished-at="2020-05-27T20:58:33Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@2552f2cb]" name="beforeSuite" is-config="true" duration-ms="45" started-at="2020-05-28T16:17:48Z" finished-at="2020-05-28T16:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@6f0628de]" name="test_case" duration-ms="1403" started-at="2020-05-27T20:58:34Z" data-provider="getData" finished-at="2020-05-27T20:58:36Z">
+        <test-method status="FAIL" signature="test_case(com.lemonban.base.pojo.ApiCaseDetail)[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@2552f2cb]" name="test_case" duration-ms="2045" started-at="2020-05-28T16:17:49Z" data-provider="getData" finished-at="2020-05-28T16:17:51Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:123)
 	at org.testng.Assert.assertEquals(Assert.java:165)
 	at com.lemonban.base.utils.AssertUtils.assertRespKeyInfo(AssertUtils.java:45)
-	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:56)
+	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,11 +61,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_case -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@6f0628de]" name="afterSuite" is-config="true" duration-ms="351" started-at="2020-05-27T20:58:36Z" finished-at="2020-05-27T20:58:36Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.lemonban.base.testCase.All_Test_Case@2552f2cb]" name="afterSuite" is-config="true" duration-ms="212" started-at="2020-05-28T16:17:52Z" finished-at="2020-05-28T16:17:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.lemonban.base.testCase.All_Test_Case -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- all-test -->
+  </suite> <!-- Suite -->
 </testng-results>

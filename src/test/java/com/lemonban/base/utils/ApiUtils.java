@@ -20,41 +20,37 @@ import com.lemonban.base.pojo.SqlChecker;
  */
 public class ApiUtils {
 
-	// 创建一个数据池，保存要回写的数据
+	// 创建一个数据池，保存要回写ApiCaseDetail实体的ActualResp、ExtractRespData
 	public static List<CellData> cellDataList = new ArrayList<CellData>();
-
-	// 把一个要写回的数据对象保存到数据池中
+	
 	public static void setCellData(CellData cellData) {
 		cellDataList.add(cellData);
 	}
-
-	// 获得整个容器
+	
 	public static List<CellData> getCellDataList() {
 		return cellDataList;
 	}
 
 	// ------------------------------------------------------------------------
-	// 创建一个数据池，保存要回写的数据
+	// 创建一个数据池，保存要回写SqlCheckUtils中的Actual、CheckResult
 	public static List<CellData> sqlCellDataList = new ArrayList<CellData>();
 
-	// 把一个要写回的数据对象保存到数据池中
 	public static void setSqlCellData(CellData cellData) {
 		sqlCellDataList.add(cellData);
 	}
 
-	// 获得整个容器
 	public static List<CellData> getSqlCellDataList() {
 		return sqlCellDataList;
 	}
 
 	/**
-	 * 为数据提供者提供数据--》工具方法<br>
+	 * 为数据提供者提供数据--》工具方法
 	 */
 	public static Object[][] getData() {
-		// 读取测试用例的详细数据列表
-		ArrayList<Object> apiCaseDetailList = ExcelUtils.readExcel("/case17/test_case_01.xlsx", 0, ApiCaseDetail.class);
 		// 接口的基本信息
-		ArrayList<Object> apiInfoList = ExcelUtils.readExcel("/case17/test_case_01.xlsx", 1, ApiInfo.class);
+		ArrayList<Object> apiInfoList = ExcelUtils.readExcel("/case17/test_case_01.xlsx", 0, ApiInfo.class);
+		// 读取测试用例的详细数据列表
+		ArrayList<Object> apiCaseDetailList = ExcelUtils.readExcel("/case17/test_case_01.xlsx", 1, ApiCaseDetail.class);
 		// 测试用例的表数据验证信息
 		ArrayList<Object> sqlCheckerList = ExcelUtils.readExcel("/case17/test_case_01.xlsx", 2, SqlChecker.class);
 
@@ -74,11 +70,6 @@ public class ApiUtils {
 			SqlChecker sqlChecker = (SqlChecker) sqlObj;
 			// 以测试用例的id拼接上-再拼接上sql的类型
 			String key = sqlChecker.getCaseId() + "-" + sqlChecker.getType();
-			// 1-bf -->
-			// 1-af -->
-			// 2-bf
-			// 2-af
-			// 8-af -->测试用例8的后置sql列表对应的key
 			List<SqlChecker> checkerList = sqlMap.get(key);
 			if (checkerList == null) {
 				checkerList = new ArrayList<SqlChecker>();

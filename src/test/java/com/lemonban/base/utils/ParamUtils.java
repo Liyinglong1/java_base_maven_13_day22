@@ -37,7 +37,6 @@ public class ParamUtils {
 		ParamUtils.addGlobalData("mobile_phone", "13888888889");
 		ParamUtils.addGlobalData("pwd", "12345678");
 		ParamUtils.addGlobalData("reg_name", "happy");
-
 		String reqStr = "{ \"mobile_phone\": \"${mobile_phone}\",\"pwd\": \"${pwd}\",'reg_name':'${reg_name}'}";
 		String result = getReplacedStr(reqStr);
 		System.out.println(result);
@@ -45,10 +44,10 @@ public class ParamUtils {
 
 	public static String getReplacedStr(String reqStr) {
 		// 请求体内容
-
 		// 把${mobile_phone}提取出来--》提取出mobile_phone--》到内存中找到这个key对应的值--》13888888889
 		// 用13888888889替换${mobile_phone}
 		// 得到最终请求体：{ "mobile_phone": "13888888889","pwd": "12345678"}
+
 
 		// 问题：怎么把这样一个有规则的数据提取出来
 		// 正则表达式：\$\{.*?\}

@@ -49,7 +49,7 @@ public class ExcelUtils {
 			int lastCellNum = firstRow.getLastCellNum();
 			// 创建一个容器，按顺序保存所有的属性名称
 			String[] fieldArray = new String[lastCellNum];
-			// 循环遍历获得所有的列
+			// 循环遍历获得所有的列名
 			for (int i = 0; i < lastCellNum; i++) {
 				// 获得当前索引对应的列
 				Cell cell = firstRow.getCell(i, MissingCellPolicy.CREATE_NULL_AS_BLANK);
@@ -66,9 +66,8 @@ public class ExcelUtils {
 			for (int i = 1; i <= lastRowNum; i++) {
 				// 创建一个用户对象来保存数据行的信息
 				Object object = clazz.newInstance();
-				
-				
-				// -------------------- 通过反射设值行号-----------------------
+
+				// -------------------- 通过反射设值行号----------------------- PS：这一步不知道有啥用，需要搞清楚
 				// 当前行的行号
 				int rowNo = i + 1;
 				String setRowNoMethodName = "setRowNo";
@@ -90,7 +89,7 @@ public class ExcelUtils {
 					String cellValue = currentCell.getStringCellValue();
 
 					// 先进行参数替换
-					cellValue = ParamUtils.getReplacedStr(cellValue);
+			       cellValue = ParamUtils.getReplacedStr(cellValue);  //PS:这一步现在没有用到
 
 					// 获得当前数据列对应的属性名
 					String fieldName = fieldArray[j];
@@ -174,7 +173,7 @@ public class ExcelUtils {
 		OutputStream outputStream = null;
 		try {
 			inputStream = ExcelUtils.class.getResourceAsStream(sourceExcelPath);
-			
+
 			workbook = WorkbookFactory.create(inputStream);
 			Sheet sheet = workbook.getSheetAt(sheetIndex);
 			// 获取全局数据池
@@ -222,9 +221,7 @@ public class ExcelUtils {
 		OutputStream outputStream = null;
 		try {
 			inputStream = ExcelUtils.class.getResourceAsStream(sourceExcelPath);
-			;
 			workbook = WorkbookFactory.create(inputStream);
-			// 在第1个表单的第一行的第一列写入：Java13期的同学们大家好
 			Sheet sheet = workbook.getSheetAt(sheetIndex);
 			// 获取全局数据池
 			List<CellData> cellDataList = ApiUtils.getSqlCellDataList();
@@ -266,7 +263,3 @@ public class ExcelUtils {
 	}
 
 }
-
-
-
-

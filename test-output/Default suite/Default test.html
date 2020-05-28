@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 27 20:58:33 CST 2020</td>
+<td>Started on:</td><td>Thu May 28 16:14:52 CST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2447 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1299 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,10 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.lemonban.base.testCase.All_Test_Case.test_case()'><b>test_case</b><br>Test class: com.lemonban.base.testCase.All_Test_Case<br>Parameters: ApiCaseDetail [caseId=login_case_1, apiId=api_login, requestData={"mobile":"18373969442","authCode":"130102"}, actualResp=, expectedRespKeyInfo=[{"jsonPath":"$.code","expected":"0"},{"jsonPath":"$.success","expected":"True"}], extractRespData=, apiInfo=ApiInfo [apiId=api_login, apiName=登录, url=http://test-scm.shicai56.com/sc56.scm.api//loginByCode, type=POST, headers=[{"name":"Host","value":" test-scm.shicai56.com"},{"name":"Connection","value":"keep-alive"},{"name":"ontent-Length","value":"44"},{"name":"ontent-Length","value":"application/json, text/plain, */*"},{"name":"x-wx","value":"admin"},{"name":"User-Agent","value":"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36"},{"name":"Content-Type","value":" application/json;charset=UTF-8"},{"name":"Origin","value":"http://test-scm.shicai56.com"},{"name":"Referer","value":"http://test-scm.shicai56.com/"},{"name":"Accept-Encoding","value":"gzip, deflate"},{"name":"Accept-Language","value":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"},{"name":"Cookie","value":"sidebarStatus=opened; temp_token=66dde3ab-3594-4dd9-95bb-1fc95ceedea0"}], auth=], beforeCheckerList=[SqlChecker [sqlId=login_sql_1, caseId=login_case_1, type=bf, sql=SELECT COUNT(*) FROM ep_emp_oauth WHERE emp_id = 43, expected=[{"COUNT(*)":9}], actual=, checkResult=]], afterCheckerList=[SqlChecker [sqlId=login_sql_2, caseId=login_case_1, type=af, sql=SELECT COUNT(*) FROM ep_emp_oauth WHERE emp_id = 43, expected=[{"COUNT(*)":9}], actual=, checkResult=]], getRowNo()=2]</td>
-<td><div><pre>java.lang.AssertionError: expected [0] but found [0]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.lemonban.base.utils.AssertUtils.assertRespKeyInfo(AssertUtils.java:45)
-	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:56)
+<td><div><pre>java.lang.ExceptionInInitializerError
+	at com.lemonban.base.utils.SqlCheckUtils.check(SqlCheckUtils.java:57)
+	at com.lemonban.base.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:23)
+	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,14 +104,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace611890729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace611890729'><pre>java.lang.AssertionError: expected [0] but found [0]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:165)
-	at com.lemonban.base.utils.AssertUtils.assertRespKeyInfo(AssertUtils.java:45)
-	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:56)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at com.lemonban.base.utils.DbUtils.init(DbUtils.java:56)
+	at com.lemonban.base.utils.DbUtils.&lt;clinit&gt;(DbUtils.java:30)
+	... 27 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1908505175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908505175'><pre>java.lang.ExceptionInInitializerError
+	at com.lemonban.base.utils.SqlCheckUtils.check(SqlCheckUtils.java:57)
+	at com.lemonban.base.utils.SqlCheckUtils.beforeCheck(SqlCheckUtils.java:23)
+	at com.lemonban.base.testCase.All_Test_Case.test_case(All_Test_Case.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,9 +140,16 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at com.lemonban.base.utils.DbUtils.init(DbUtils.java:56)
+	at com.lemonban.base.utils.DbUtils.&lt;clinit&gt;(DbUtils.java:30)
+	... 27 more
 </pre></div></td>
-<td>1</td>
-<td>com.lemonban.base.testCase.All_Test_Case@6f0628de</td></tr>
+<td>0</td>
+<td>com.lemonban.base.testCase.All_Test_Case@63fd4873</td></tr>
 </table><p>
 </body>
 </html>

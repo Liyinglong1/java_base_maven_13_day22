@@ -37,7 +37,9 @@ public class All_Test_Case {
 	@DataProvider
 	public Object[][] getData() {
 		logger.info("正在准备测试用例相关数据...");
-		return ApiUtils.getData();
+		Object[][]  datasObjects = ApiUtils.getData();
+		return datasObjects;
+//		return ApiUtils.getData();
 	}
 
 	@Test(dataProvider = "getData")
@@ -59,8 +61,8 @@ public class All_Test_Case {
 	@AfterSuite
 	public void afterSuite() {
 
-		ExcelUtils.batchWrite("/case17/test_case_01.xlsx", "d://api.xlsx", 0);
-		ExcelUtils.batchWrite2("/case17/test_case_01.xlsx", "d://api-1.xlsx", 2);
+		ExcelUtils.batchWrite("/case17/test_case_01.xlsx", "d://api.xlsx", 0);  //回写ApiCaseDetail实体的ActualResp、ExtractRespData
+		ExcelUtils.batchWrite2("/case17/test_case_01.xlsx", "d://api-1.xlsx", 2); //回写SqlCheckUtils中的Actual、CheckResult
 
 	}
 
